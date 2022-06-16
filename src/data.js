@@ -1,4 +1,4 @@
-{
+export const data = {
 	"blog": {
 		"mainTitle": "My BLOG",
 		"subTitle": "React & Node",
@@ -7,7 +7,7 @@
 	"posts": [
 		{
 			"id": 1,
-			"thumbnail": "/assets/post-img1.jpg",
+			"thumbnail": "/assets/images/post-img1.jpg",
 			"title": "Dipisicing elit. Inventore illum nostrum perferendis.",
 			"mainBg": "/assets/post-background1.jpg",
 			"category": ["Life", "style"],
@@ -31,7 +31,7 @@
 		},
 		{
 			"id": 2,
-			"thumbnail": "/assets/post-img2.jpg",
+			"thumbnail": "/assets/images/post-img2.jpg",
 			"title": "Esse deserunt ducimus earum provident iste eaque dolores",
 			"mainBg": "/assets/post-background2.jpg",
 			"category": ["Tech", "Life"],
@@ -59,7 +59,7 @@
 		},
 		{
 			"id": 3,
-			"thumbnail": "/assets/post-img3.jpg",
+			"thumbnail": "assets/images/post-img3.jpg",
 			"title": "Ducimus earum provident iste eaque dolores consequuntur?",
 			"mainBg": "/assets/post-background3.jpg",
 			"category": ["Tech", "Life"],
@@ -83,7 +83,7 @@
 		},
 		{
 			"id": 4,
-			"thumbnail": "/assets/post-img4.jpg",
+			"thumbnail": "assets/images/post-img4.jpg",
 			"title": "Dolor, voluptatem minima nobis ullam voluptate fugiat, idplaceat optio magni laborum iste!",
 			"mainBg": "/assets/post-background4.jpg",
 			"category": ["Tech", "Life"],
@@ -107,7 +107,7 @@
 		},
 		{
 			"id": 5,
-			"thumbnail": "/assets/post-img5.jpg",
+			"thumbnail": "assets/images/post-img5.jpg",
 			"title": "Esse deserunt ducimus",
 			"mainBg": "/assets/post-background5.jpg",
 			"category": ["Sports", "Music", "Life"],
@@ -135,7 +135,7 @@
 		},
 		{
 			"id": 6,
-			"thumbnail": "/assets/post-img6.jpg",
+			"thumbnail": "assets/images/post-img6.jpg",
 			"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
 			"mainBg": "/assets/post-background6.jpg",
 			"category": ["Life", "Style"],

@@ -1,25 +1,26 @@
 import React from 'react';
+import './post.css';
+import './author.css';
+import './category.css';
+import Hidden from '../../../components/Hidden/Hidden';
+import Categories from '../../../components/Categories/Categories';
 
-const Post = ({ src }) => {
+const Post = ({ thumbnailSrc, title, profileSrc }) => {
     return (
         <li>
             <a href='/post-view' className='post'>
                 <article>
-                    <img src={src} alt='' />
+                    <img src={thumbnailSrc} alt='' />
                     <div className="contents-wrap">
 						{/* <!-- category --> */}
-						<dl className="category">
-							<dt className="a11y-hidden">Category</dt>
-							<dd>Life</dd>
-							<dd>Style</dd>
-						</dl>
+						<Categories title='Category' categoryAry={['Life', 'Style']} />
 						{/* <!-- //category --> */}
 
-						<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h3>
+						<h3>{title}</h3>
 						{/* <!-- author --> */}
 						<dl className="author-wrap">
-							<dt className="a11y-hidden">Author</dt>
-							<dd className="author"><img src="./images/profile.jpg" alt="" /> Chilli</dd>
+							<Hidden><dt>Category</dt></Hidden>
+							<dd className="author"><img src={profileSrc} alt="" /> Chilli</dd>
 							<dt className="a11y-hidden">Created</dt>
 							<dd className="created">2022.05.25</dd>
 						</dl>

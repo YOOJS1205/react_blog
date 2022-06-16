@@ -5,18 +5,19 @@ import WriteBtn from './WirteBtn/WriteBtn';
 import Logout from './Logout/Logout';
 import './header.css';
 import './button.css';
+import Wrapper from '../Wrapper/Wrapper';
 
 const Header = () => {
     return (
         <header>
-            <div className='max-width'>
+            <Wrapper>
                 <Logo />
                 <ul>
                     <Profile />
                     <WriteBtn />
                     <Logout />
                 </ul>
-            </div>
+            </Wrapper>
         </header>
     )
 }
