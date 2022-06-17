@@ -5,7 +5,6 @@ import {data} from '../../../data';
 
 
 const PostList = () => {
-	console.log(data);
     return (
         <ul className='posts'>
 			{data.posts.map(item => (
@@ -13,7 +12,8 @@ const PostList = () => {
 				key={item.id}
 				thumbnailSrc={item.thumbnail}
 				title={item.title}
-				profileSrc={item.profileImg}/>
+				profileSrc={item.profileImg}
+				created={item.created}/>
 			))}
 		</ul>
     )

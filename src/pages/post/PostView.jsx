@@ -1,18 +1,14 @@
-import React from 'react'
-import Banner from '../../components/Banner/Banner';
+import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Main from './Main/Main';
 
-const Home = () => {
+const PostView = () => {
     return (
         <>
         <Header />
-        <Banner />
-        <Main />
         <Footer />
         </>
     )
 }
 
-export default Home;
+export default PostView;

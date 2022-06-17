@@ -11,7 +11,7 @@ export const data = {
 			"title": "Dipisicing elit. Inventore illum nostrum perferendis.",
 			"mainBg": "/assets/post-background1.jpg",
 			"category": ["Life", "style"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -35,7 +35,7 @@ export const data = {
 			"title": "Esse deserunt ducimus earum provident iste eaque dolores",
 			"mainBg": "/assets/post-background2.jpg",
 			"category": ["Tech", "Life"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -63,7 +63,7 @@ export const data = {
 			"title": "Ducimus earum provident iste eaque dolores consequuntur?",
 			"mainBg": "/assets/post-background3.jpg",
 			"category": ["Tech", "Life"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -87,7 +87,7 @@ export const data = {
 			"title": "Dolor, voluptatem minima nobis ullam voluptate fugiat, idplaceat optio magni laborum iste!",
 			"mainBg": "/assets/post-background4.jpg",
 			"category": ["Tech", "Life"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -111,7 +111,7 @@ export const data = {
 			"title": "Esse deserunt ducimus",
 			"mainBg": "/assets/post-background5.jpg",
 			"category": ["Sports", "Music", "Life"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",
@@ -139,7 +139,7 @@ export const data = {
 			"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
 			"mainBg": "/assets/post-background6.jpg",
 			"category": ["Life", "Style"],
-			"profileImg": "/assets/profile.jpg",
+			"profileImg": "/assets/images/profile.jpg",
 			"contents": [
 				{
 					"type": "p",

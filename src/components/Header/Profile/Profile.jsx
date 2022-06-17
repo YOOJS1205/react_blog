@@ -5,7 +5,7 @@ const Profile = () => {
     return (
         <li className='profile-img'>
             <a href='!#'>
-                <img src='../../assets/profile.jpg' alt='My Page' />
+                <img src='/assets/images/profile.jpg' alt='My Page' />
             </a>
         </li>
     )
