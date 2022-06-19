@@ -5,6 +5,7 @@ import './author.css';
 import './category.css';
 import Hidden from '../../../components/Hidden/Hidden';
 import Categories from '../../../components/Categories/Categories';
+import AuthorWrap from '../../../components/AuthorWrap/AuthorWrap';
 
 const Post = (props) => {
     return (
@@ -19,12 +20,7 @@ const Post = (props) => {
 
 						<h3>{props.title}</h3>
 						{/* <!-- author --> */}
-						<dl className="author-wrap">
-							<Hidden><dt>Category</dt></Hidden>
-							<dd className="author"><img src={props.profileSrc} alt="" /> Chilli</dd>
-							<dt className="a11y-hidden">Created</dt>
-							<dd className="created">{props.created}</dd>
-						</dl>
+						<AuthorWrap />
 						{/* <!-- //author --> */}
 
 						<p className="post-description">
