@@ -1,10 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 import AuthorWrap from '../../../components/AuthorWrap/AuthorWrap';
 import Categories from '../../../components/Categories/Categories';
 import Wrapper from '../../../components/Wrapper/Wrapper';
 import './view.css';
 
 export default function View() {
+    const { thumbnailImgSrc } = useSelector(state => ({
+		thumbnailImgSrc: state.thumbnailImgReducer.thumbnailImgSrc
+	}));
+
+	console.log(thumbnailImgSrc);
   return (
     <div className='view'>
         <Wrapper>
@@ -26,7 +32,7 @@ export default function View() {
                             amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est facilis dolor quas odio
                             cum incidunt repudiandae vel.
                         </p>
-                        <img src="/assets/images/post-background6.jpg" alt="" />
+                        <img src={thumbnailImgSrc} alt="" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti dolore quidem. Placeat, eaque! Exercitationem est
                             facilis dolor quas odio cum incidunt repudiandae vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore illum nostrum perferendis voluptas, voluptate soluta corrupti

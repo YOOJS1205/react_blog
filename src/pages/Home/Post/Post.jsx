@@ -1,14 +1,21 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import './post.css';
 import './author.css';
 import './category.css';
 import Categories from '../../../components/Categories/Categories';
 import AuthorWrap from '../../../components/AuthorWrap/AuthorWrap';
 
-const Post = (props) => {
+const Post = props => {
+	const dispatch = useDispatch();
+
+	const onClickThumbnailImg = (e) => {
+		const thumbnailImgSrc = e.target.src;
+		e.preventDefault();
+		dispatch({ type: 'CLICK', thumbnailImgSrc })
+	}
     return (
-        <li>
+        <li onClick={onClickThumbnailImg}>
             <a href='/post-view' className='post'>
                 <article>
                     <img src={props.thumbnailSrc} alt='' />

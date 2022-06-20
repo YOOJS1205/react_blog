@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux/es/exports';
 import axios from 'axios';
 import Post from '../Post/Post';
 import './postList.css';
 
 
 const PostList = () => {
+	const { thumbnailImgSrc } = useSelector(state => ({
+		thumbnailImgSrc: state.thumbnailImgReducer.thumbnailImgSrc
+	}));
+
+	console.log(thumbnailImgSrc);
 	// json 데이터 담는 변수 초기 설정
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [postObj, setPostObj] = useState({});
