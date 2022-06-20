@@ -18,8 +18,6 @@ const PostList = () => {
 			setIsLoaded(true);
 		}
 		getData();
-		// axios.get('/assets/data.json')
-		// 	.then(response => setPostObj(response.data.posts));
 	}, [])
 
 	if (isLoaded) {
