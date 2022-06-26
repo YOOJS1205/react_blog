@@ -5,6 +5,7 @@ import './author.css';
 import './category.css';
 import Categories from '../../../components/Categories/Categories';
 import AuthorWrap from '../../../components/AuthorWrap/AuthorWrap';
+import { Link } from 'react-router-dom';
 
 const Post = props => {
 	const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Post = props => {
 	}
     return (
         <li onClick={onClickThumbnailImg}>
-            <a href='/post-view' className='post'>
+            <Link to='/post-view' className='post'>
                 <article>
                     <img src={props.thumbnailSrc} alt='' />
                     <div className="contents-wrap">
@@ -33,7 +34,7 @@ const Post = props => {
 						</p>
 					</div>
                 </article>
-            </a>
+            </Link>
         </li>
     )
 }

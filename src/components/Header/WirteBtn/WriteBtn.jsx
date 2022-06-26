@@ -5,7 +5,7 @@ const WriteBtn = () => {
     return (
         <li>
             <a href="!#" className="button">
-				<img src="./assets/icon-modify-white.svg" alt="" />
+				<img src={require("../../../assets/icon-modify-white.svg").default} alt="" />
 				<span>Write</span>
 			</a>
         </li>
