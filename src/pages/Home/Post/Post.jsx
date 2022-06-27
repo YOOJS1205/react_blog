@@ -21,7 +21,7 @@ const Post = props => {
                 <article>
                     <img src={props.thumbnailSrc} alt='' />
                     <div className="contents-wrap">
-						<Categories title='Category' categoryAry={['Life', 'Style']} />
+						<Categories title='Category' categoryAry={props.category} />
 						<h3>{props.title}</h3>
 						<AuthorWrap />
 						<p className="post-description">

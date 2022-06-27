@@ -4,7 +4,8 @@
 
 /* contents */
 .view-contents img {
-	max-width: 100%;
+	width: 100%;
+	/* max-width: 100%; */
 	margin: 3.2rem 0;
 }
 .view-contents p {

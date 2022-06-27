@@ -34,6 +34,7 @@ const PostList = () => {
 					key={item.id}
 					thumbnailSrc={item.thumbnail}
 					title={item.title}
+					category={item.category}
 					profileSrc={item.profileImg}
 					created={item.created}/>
 				))}

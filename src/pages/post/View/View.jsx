@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import AuthorWrap from '../../../components/AuthorWrap/AuthorWrap';
 import Categories from '../../../components/Categories/Categories';
@@ -50,9 +51,9 @@ export default function View() {
                             <span className="a11y-hidden">delete</span>
                         </button>
                     </div>
-                    <a href="./" className="btn-back">
+                    <Link to="./" className="btn-back">
                         <span className="a11y-hidden">Back</span>
-                    </a>
+                    </Link>
                 </div>
             </section>
         </Wrapper>
